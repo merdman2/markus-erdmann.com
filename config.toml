@@ -90,13 +90,13 @@ And how would we use its technology to save humanity?"""
 
     # Google invisible captcha
     #[params.contact.captcha]
-    #  sitekey = ""
+    sitekey = "6LeBUCIUAAAAAPTQwTt9u6B7HI3oyNkszubdG6YE"
 
 
     # Add optional form fields to identify contact forms.
     #[[params.contact.fields.hidden]]
     #  name = "someID"
-    #  value = "example.com"
+    value = "markus-erdmann.com"
 
     #[[params.contact.fields.hidden]]
     # Special values for name such as "page" and "site" will be autofilled
