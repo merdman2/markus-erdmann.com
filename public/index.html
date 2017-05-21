@@ -93,13 +93,15 @@ And how would we use its technology to save humanity?</span>
                 <hr />
 <h2>Talk to Me!</h2>
 
-  <form action="https://formspree.io/website@markus-erdmann.com" method="post" name="sentMessage" id="contactForm" novalidate>
+
+
+  <form action="https://formspree.io/website@markus-erdmann.com" method="post" name="sentMessage" id="contactForm" novalidate="" class="has-validation-callback disabled-with-errors">
 
     <div class="field">
-      <input name="name" id="name" placeholder="Name" />
+      <input name="name" id="name" placeholder="Name" data-com.agilebits.onepassword.user-edited="yes">
       </div>
-    <div class="field">
-      <input type="email" name="email" id="email" placeholder="Email" />
+    <div class="field has-success">
+      <input type="email" name="email" id="email" placeholder="Email" data-validation="email" data-validation-optional="true" data-validation-event="keyup change" data-com.agilebits.onepassword.user-edited="yes" class="valid" data-validation-have-been-blurred="1">
     </div>
     <div class="field">
       <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
@@ -115,11 +117,10 @@ And how would we use its technology to save humanity?</span>
       
     </div>
     <ul class="actions">
-      <li><button type="submit" >Send it</button></li>
+      <li><button type="submit" class="">Send it</button></li>
     </ul>
     
   </form>
-
               
             </footer>
           </section>
@@ -165,6 +166,13 @@ And how would we use its technology to save humanity?</span>
   <script src="/assets/js/contact.js"></script>
 
 
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-99653491-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
 
 
 
