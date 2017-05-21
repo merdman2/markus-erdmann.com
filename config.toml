@@ -86,15 +86,15 @@ And how would we use its technology to save humanity?"""
     messagePlaceholder = "Message"
     buttonText = "Send it"
     success = "Thank you for contacting me."
-    error = "Message could not be send. Please contact me at website@markus-erdmann.com"
+    error = "Message could not be send. Please contact me at website@markus-erdmann.com."
 
     # Google invisible captcha
-    #[params.contact.captcha]
+    [params.contact.captcha]
     sitekey = "6LeBUCIUAAAAAPTQwTt9u6B7HI3oyNkszubdG6YE"
 
 
     # Add optional form fields to identify contact forms.
-    #[[params.contact.fields.hidden]]
+    [[params.contact.fields.hidden]]
     #  name = "someID"
     value = "markus-erdmann.com"
 
