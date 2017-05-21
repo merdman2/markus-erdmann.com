@@ -1,7 +1,11 @@
 <hr />
 <h2>{{ .Site.Params.contact.title }}</h2>
+
+<!--
 {{ if not .Site.Params.contact.postURL }}
-  <form action="https://formspree.io/{{ with .Site.Params.contact.email }}{{.}}{{ end }}" method="post" name="sentMessage" id="contactForm" novalidate>
+
+
+ <form action="https://formspree.io/{{ with .Site.Params.contact.email }}{{.}}{{ end }}" method="post" name="sentMessage" id="contactForm" novalidate>
 {{ else }}
   <form  action="{{ .Site.Params.contact.postURL }}" method="POST" name="sentMessage" id="contactForm" novalidate>
 {{ end }}
@@ -41,4 +45,32 @@ data-sitekey="{{ .sitekey }}" data-callback="onSubmit" data-badge="inline" {{ en
         <input type="hidden" name="{{ .name }}" value="{{ .value }}"/>
       {{ end }}
     {{ end }}
+  </form>
+-->
+
+  <form action="https://formspree.io/website@markus-erdmann.com" method="post" name="sentMessage" id="contactForm" novalidate="" class="has-validation-callback disabled-with-errors">
+
+    <div class="field">
+      <input name="name" id="name" placeholder="Name" data-com.agilebits.onepassword.user-edited="yes">
+      </div>
+    <div class="field has-success">
+      <input type="email" name="email" id="email" placeholder="Email" data-validation="email" data-validation-optional="true" data-validation-event="keyup change" data-com.agilebits.onepassword.user-edited="yes" class="valid" data-validation-have-been-blurred="1">
+    </div>
+    <div class="field">
+      <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+    </div>
+    <div class="text-success" id="success" style="display:none;">
+      
+        Thank you for contacting me.
+      
+    </div>
+    <div class="text-danger" id="error" style="display:none;">
+      
+        Message could not be send. Please contact me at website@markus-erdmann.com
+      
+    </div>
+    <ul class="actions">
+      <li><button type="submit" class="">Send it</button></li>
+    </ul>
+    
   </form>
