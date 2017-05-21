@@ -79,7 +79,7 @@ And how would we use its technology to save humanity?"""
 
     #postURL = "https://example.com/mailout/"
 
-    enable = true
+    enable = false
     title = "Talk to Me!"
     namePlaceholder = "Name"
     emailPlaceholder = "Email"
