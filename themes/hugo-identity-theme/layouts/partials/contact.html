@@ -1,11 +1,7 @@
 <hr />
 <h2>{{ .Site.Params.contact.title }}</h2>
-
-<!--
 {{ if not .Site.Params.contact.postURL }}
-
-
- <form action="https://formspree.io/{{ with .Site.Params.contact.email }}{{.}}{{ end }}" method="post" name="sentMessage" id="contactForm" novalidate>
+  <form action="https://formspree.io/{{ with .Site.Params.contact.email }}{{.}}{{ end }}" method="post" name="sentMessage" id="contactForm" novalidate>
 {{ else }}
   <form  action="{{ .Site.Params.contact.postURL }}" method="POST" name="sentMessage" id="contactForm" novalidate>
 {{ end }}
@@ -46,40 +42,3 @@ data-sitekey="{{ .sitekey }}" data-callback="onSubmit" data-badge="inline" {{ en
       {{ end }}
     {{ end }}
   </form>
-
-  -->
-
-                <form class="contact-form" method="post" action="https://formspree.io/website@markus-erdmann.com">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                              <label for="name">Your Name</label>
-                                <input type="text" class="form-control" name="name" id="name" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="text" class="form-control" name="email" id="email" required>
-                            </div>
-                        </div>
-						<div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="phone">Your Phone</label>
-                                <input type="text" class="form-control" name="phone" id="phone" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                              <label for="message">Your Message</label>
-                                <textarea id="message" class="form-control" name="message" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 text-center">
-                          <button type="submit" class="btn btn-template-main"><i class="fa fa-envelope-o"></i>Send Message</button>
-
-                        </div>
-                    </div>
-                    
-                </form>
