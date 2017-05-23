@@ -9,3 +9,7 @@ h1#site-title {
 font-family: 'Lobster, Arial,sans-serif';
 font-size: 45px;
 }
+
+#main {
+    max-width: 75%;
+}

@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "/" #without ending slash
 languageCode = "en-us"
-title = "Markus Erdmann - Technology Educator"
+title = "Markus Erdmann - Technology Inspirationalist, Local Impact Evangelist"
 theme = "hugo-identity-theme"
 themesDir = "themes"
 
@@ -45,7 +45,7 @@ googleAnalytics = "UA-99653491-1"
     name = "Markus Erdmann"
     # Avatars can be written to images/avatars/
     avatar = "markus.jpg"
-    position = "Technology inspirationalist, Local Impact Evangelist"
+    position = "Technology Inspirationalist, Local Impact Evangelist"
     livesIn = "[Nelson, New Zealand](https://www.google.co.nz/maps/@-41.2653939,173.2708922,13528m/data=!3m1!1e3?hl=en)"
     scope = [
         "Founder [Relive 360](http://relive360.co.nz)",
