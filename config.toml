@@ -50,7 +50,7 @@ googleAnalytics = "UA-99653491-1"
     scope = [
         "Founder [Relive 360](http://relive360.co.nz)",
         "Co-Founder [MakeMy.Sale](https://makemy.sale)",
-		"Blogger for [SpaceWhale.Technology](https://spacewhale.technology)",
+		"Blogger for [SpaceWhale.Technology](http://spacewhale.technology)",
         "Member of [Local.Foundation Startup Community](http://local.foundation)"]
 		
     biography = """Is there such a thing as a Space Whale?  
@@ -120,6 +120,16 @@ And how would we use its technology to save humanity?"""
     title = "Facebook"
     icon = "fa-facebook"
     link = "https://www.facebook.com/SpaceWhaleTechnology-685580341631612/"
+	
+	[[params.social]]
+    title = "Blog"
+    icon = "fa-commenting-o"
+    link = "http://spacewhale.technology"
+	
+	[[params.social]]
+    title = "Meetup"
+    icon = "fa-meetup"
+    link = "https://www.meetup.com/localfoundation/"
 
   # Footer settings
   [params.footer]
