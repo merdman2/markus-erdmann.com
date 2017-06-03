@@ -130,6 +130,11 @@ And how would we use its technology to save humanity?"""
     title = "Meetup"
     icon = "fa-meetup"
     link = "https://www.meetup.com/localfoundation/"
+	
+	[[params.social]]
+    title = "Digital Nomad AirBnB"
+    icon = "fa-bed"
+    link = "https://digitalnomad.kiwi"
 
   # Footer settings
   [params.footer]
